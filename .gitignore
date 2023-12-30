@@ -1,52 +1,64 @@
-# Prerequisites
-*.d
+build_output/*
+build_artifacts/*
+build_temp/*
+*.suo
+*.user
+packages
+*.dotCover
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+*.ncrunch*
+.vs
 
-# Linker output
-*.ilk
-*.map
-*.exp
+.fake
 
-# Precompiled Headers
-*.gch
-*.pch
+src/logs/*
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
+bin
+obj
+_ReSharper*
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+*.csproj.user
+*.resharper.user
+*.resharper
+*.ReSharper
+*.cache
+*~
+*.swp
+*.bak
+*.orig
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
+NuGet.exe
+packages
 
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
+# Tests
+TestResult.xml
+submit.xml
+SolutionVersion.cs
+src/SolutionVersion.cs
+doc/build/*
+*.[lm]df
+*.runsettings
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+# osx noise
+.DS_Store
+*.DotSettings
+/src/MassTransit.SimpleInjectorIntegration/MassTransit.SimpleInjectorIntegration.csproj.nuspec
+*.DS_Store
+
+docs/.vuepress/dist
+_book
+/node_modules
+.vscode
+**/.idea/
+appsettings.Development.json
+package-lock.json
+
+
+# Cake
+tools/**
+!tools/packages.config
+
+# Artifacts
+artifacts/**
+artifacts_old/**
+/src/.ionide
